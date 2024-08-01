@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kayd dhiiga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>kayda dhiiga</h1>
+        
+        <form id="createForm">
+            <h2>Ku dar Kaydka Dhiiga</h2>
+            <label for="first_name">magaca koobad:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <label for="last_name">magaca aabaha:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <label for="city">magalada joogta:</label>
+            <input type="text" id="city" name="city" required>
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number" required>
+            <label for="gender">lab iyo dhig:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">nin</option>
+                <option value="Female">gabadh</option>
+            </select>
+            <label for="blood_type">nooca yahay dhiigu:</label>
+            <select id="blood_type" name="blood_type" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+            <button type="submit">ku dar</button>
+        </form>
+        
+        <div id="stockList">
+            <h2>Current Stock</h2>
+            <div id="records"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
